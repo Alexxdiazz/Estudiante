@@ -122,7 +122,6 @@ class _pag1State extends State<pag1> {
                       _estudianteAtual = _listaEstudiantes[index];
                       _controllerNombre.text = _estudianteAtual!.nombre;
                       _controllerMatricula.text = _estudianteAtual!.matricula;
-                      _editarEstudiante(_estudianteAtual!);
                     });
                   },
                 );
