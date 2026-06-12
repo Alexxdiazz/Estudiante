@@ -25,7 +25,7 @@ class MenuPrincipal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("CRUD Universidade"),
+        title: const Text("CRUD"),
       ),
       body: Center(
         child: Column(
