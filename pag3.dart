@@ -143,13 +143,13 @@ class _Pag3State extends State<Pag3> {
 
                   onTap: () {
                     setState(() {
-                      _cursandoAtual = item;
-
-                      _controllerEstudiante.text =
-                          item.estudianteId.toString();
-
-                      _controllerDisciplina.text =
-                          item.disciplinaId.toString();
+                      _cursandoAtual = Cursando(
+                        id: item['id'],
+                         estudianteId: item['estudiante_id'],
+                        disciplinaId: item['disciplina_id'],
+                      );
+                     _controllerEstudiante.text = item['estudiante_id'].toString();
+                     _controllerDisciplina.text = item['disciplina_id'].toString();
                     });
                   },
                 );
