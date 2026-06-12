@@ -27,7 +27,7 @@ class _Pag3State extends State<Pag3> {
 
   _loadCursando() async {
     List<Map<String, dynamic>> temp =
-        await _cursandoDAO.listarCursando();
+        await _cursandoDAO.listarComJoin();
 
     setState(() {
       _listaCursando = temp;
