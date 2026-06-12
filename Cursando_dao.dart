@@ -53,6 +53,8 @@ class CursandoDao {
     return await db.rawQuery('''
       SELECT
         c.id,
+        c.estudiante_id,
+        c.disciplina_id,
         e.nombre as estudiante,
         d.nombre as disciplina
       FROM cursando c
