@@ -17,7 +17,7 @@ class _Pag3State extends State<Pag3> {
   final _controllerEstudiante = TextEditingController();
   final _controllerDisciplina = TextEditingController();
 
-  List<Cursando> _listaCursando = [];
+  List<Map<String, dynamic>> _listaCursando = [];
 
   @override
   void initState() {
@@ -26,7 +26,7 @@ class _Pag3State extends State<Pag3> {
   }
 
   _loadCursando() async {
-    List<Cursando> temp =
+    List<Map<String, dynamic>> temp =
         await _cursandoDAO.listarCursando();
 
     setState(() {
