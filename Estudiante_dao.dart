@@ -17,7 +17,6 @@ class EstudianteDao {
     );
   }
 
-  //Editar no banco
   Future<void> editarEstudiante(Estudiante e) async {
     final db = await _dbHelper.database;
     await db.update(
@@ -28,7 +27,6 @@ class EstudianteDao {
     );
   }
 
-  //excluir
   Future<void> deleteEstudiante(int index) async {
     final db = await _dbHelper.database;
     await db.delete(
